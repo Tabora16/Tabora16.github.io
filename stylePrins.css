@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker';
+}
+html{
+    scroll-behavior: smooth;
+}
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    color:white;
+    text-align: center;
+}
+.info h2{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.info button{
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    background-color: orangered;
+    color:whitesmoke;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*SECCION SABORES*/
+#sabores{
+    padding: 50px 0;
+}
+#sabores h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+#sabores .fila{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+#sabores .fila .item img{
+    max-width: 150px;
+}
+#sabores .fila .item {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+}
+#sabores .fila .item:hover{
+    background-color:burlywood;
+}
+#sabores .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+#sabores button{
+    display: block;
+    width: fit-content;
+    margin:20px auto;
+    font-size: 20px;
+    border: none;
+    background-color: orangered;
+    color:whitesmoke;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* SECCION PLATOS */
+#platos h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#platos .fila{ 
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#platos .fila .item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+#platos .fila .item img{
+    width: 100%;
+    display: block;
+}
+#platos .fila .item p{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    transition: .1s;
+}
+#platos .fila .item:hover p{
+    bottom: 0;
+}
+#platos button{
+    display: block;
+    width: fit-content;
+    margin:20px auto;
+    font-size: 20px;
+    border: none;
+    background-color: orangered;
+    color:whitesmoke;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#contacto{
+    background-color: orangered;
+    padding: 50px 0;
+}
+#contacto .fila{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#contacto a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 3px;
+}
+#contacto a:hover{
+    text-decoration: underline;
+}
+#contacto h3{
+    margin-bottom: 12px;
+}
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('coc.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: lightcoral;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after {
+    content: '   ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.navigation .login {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color:cornflowerblue;
+    font-weight: 500;
+    margin-left: 0px;
+    transition: .5s;
+}
+
+.navigation .login:hover {
+    background: white;
+    color: rosybrown;
+}
+
+
+
